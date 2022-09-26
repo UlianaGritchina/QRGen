@@ -10,14 +10,14 @@ import SwiftUI
 @available(iOS 14.0, *)
 @available(macOS 10.15, *)
 
-struct QRCodeView: View {
+public struct QRCodeView: View {
     @ObservedObject var vm: QRCodeViewModel
     public init(string: String,
-         foregroundColor: Color? = .black,
-         backgroundColor: Color? = .white,
-         width: CGFloat? = 200,
-         height: CGFloat? = 200,
-         cornerRadius: CGFloat? = 0) {
+                foregroundColor: Color? = .black,
+                backgroundColor: Color? = .white,
+                width: CGFloat? = 200,
+                height: CGFloat? = 200,
+                cornerRadius: CGFloat? = 0) {
         vm = QRCodeViewModel(string: string,
                              foregroundColor: foregroundColor,
                              backgroundColor: backgroundColor,

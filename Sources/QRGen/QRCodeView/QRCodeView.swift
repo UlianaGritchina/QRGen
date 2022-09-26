@@ -12,7 +12,7 @@ import SwiftUI
 
 struct QRCodeView: View {
     @ObservedObject var vm: QRCodeViewModel
-    init(string: String,
+    public init(string: String,
          foregroundColor: Color? = .black,
          backgroundColor: Color? = .white,
          width: CGFloat? = 200,
@@ -25,7 +25,7 @@ struct QRCodeView: View {
                              height: height,
                              cornerRadius: cornerRadius)
     }
-    var body: some View {
+    public var body: some View {
         VStack {
             if let image = UIImage(data: vm.qrImageData) {
                 Image(uiImage: image)

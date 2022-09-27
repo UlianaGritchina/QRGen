@@ -10,19 +10,17 @@ import SwiftUI
 @available(iOS 14.0, *)
 @available(macOS 10.15, *)
 
-
-/// Custom QR-Code view.
-///
-///     QRCodeView(string: "Some text, link, email",
-///                foregroundColor: .white,
-///                backgroundColor: .black,
-///                width: 150,
-///                height: 150,
-///                cornerRadius: 5)
-///
-
 public struct QRCodeView: View {
     @ObservedObject var vm: QRCodeViewModel
+    /// Custom QR-Code view.
+    ///
+    ///     QRCodeView(string: "Some text, link, email",
+    ///                foregroundColor: .white,
+    ///                backgroundColor: .black,
+    ///                width: 150,
+    ///                height: 150,
+    ///                cornerRadius: 5)
+    ///
     public init(string: String,
                 foregroundColor: Color? = .black,
                 backgroundColor: Color? = .white,
